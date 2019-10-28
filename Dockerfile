@@ -9,6 +9,7 @@ WORKDIR /newprofile
 COPY Gemfile /newprofile/Gemfile
 COPY Gemfile.lock /newprofile/Gemfile.lock
 
+#run bundle install
 RUN bundle install
 COPY . /newprofile
 
